@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Alqimah.css">
+    <meta charset="UTF-8">
+    <title>Alqimah </title>
+</head>
+<body>
+
+    
+    <!-- This is logo  -->
+    <header>
+        <h2> <a href="#" class="logo">Alqimah</a></h2>
+
+        <!-- This is Navigation bar  -->
+        <ul>
+        <li> <a href="#" class="active">Home</a></li>
+        <li> <a href="#">Products</a></li>
+        <li> <a href="#">Shop</a></li>
+        <li> <a href="">About</a></li>
+        <li> <a href="#">Contact</a></li>
+        </ul>
+
+    </header>
+
+
+    <section class="main">
+        <img src="stars.jpg" id="stars" alt="stars">
+        <h2 class="Alqimah"> Alqimah PRODUCT MANAGMENT SYSTEM</h2>
+        <img src="moon2.jpg" id="moon" alt="moon">
+        <img src="mountains3.jpg" id="mountains3" alt="mountains3">
+        <img src="mountains4.jpg" id="mountains4" alt="mountains4">
+        <img src="river5.jpg" id="river"alt="river">
+        <img src="boat6.jpg" id="boat" alt="boat">
+        <img src="mountains7.jpg" id="mountains7" alt="mountains7">
+    </section>
+
+<div class="content">
+    <div class="cruds">
+        <div class="head">
+            <h2>Alqimah</h2>
+            <p>Product Managment System</p>
+        </div>
+
+
+            <div class="inputs">
+            <input placeholder="title" type="text" id="title">
+                <div class="price">
+                    <!-- this function "getTotal()" created by javascript -->
+                    <input onkeyup="getTotal()" type="number" id="price" placeholder="price"> 
+                    <input onkeyup="getTotal()" type="number" id="taxs" placeholder="taxs"> 
+                    <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads"> 
+                    <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount"> 
+                    <small id="total"></small>
+                </div>
+            <input placeholder="count" type="number" id="count">
+            <input placeholder="category" type="text" id="category">
+            <button id="submit">create</button>
+
+            </div>
+
+
+                <div class="outputs">
+                    <div class="searchBlock">
+                        <input onkeyup ="searchData(this.value)" id= "search" type="text" placeholder="Search">
+                    </div>
+                    <div class="btnSearch">
+                        <!-- here we call the function which we created by javascript to search -->
+                        <button onclick ="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+                        <button onclick ="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+                    </div>
+
+                    <div id="deleteAll">
+
+                    </div>
+
+                    <table>
+                        <tr>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>price</th>
+                            <th>ads</th>
+                            <th>taxs</th>
+                            <th>discount</th>
+                            <th>total</th>
+                            <th>category</th>
+                            <th>update</th>
+                            <th>delete</th>
+                        </tr>
+
+                        <tbody id = "tbody">
+                            
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+
+    </div>
+
+    <!-- <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt magnam dolorum iste voluptas. Nobis ea aut alias, quae atque, facere mollitia fugiat omnis quam magnam repellat ratione repudiandae cupiditate. Deleniti iste consectetur odit maiores, eveniet laboriosam facilis, neque esse quod ex et molestias officiis nulla pariatur iure sint itaque? Quas voluptates, a aliquid quia vitae asperiores magni fugit animi cumque voluptas quis fuga, placeat repellat error sequi blanditiis, qui eaque? Consectetur delectus iusto ea aliquid provident deleniti magni quam in doloribus sint eligendi recusandae, debitis voluptatem, incidunt consequuntur molestiae dolorem? Nulla voluptatum quam enim tenetur exercitationem velit reprehenderit repellendus neque.</p><br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt magnam dolorum iste voluptas. Nobis ea aut alias, quae atque, facere mollitia fugiat omnis quam magnam repellat ratione repudiandae cupiditate. Deleniti iste consectetur odit maiores, eveniet laboriosam facilis, neque esse quod ex et molestias officiis nulla pariatur iure sint itaque? Quas voluptates, a aliquid quia vitae asperiores magni fugit animi cumque voluptas quis fuga, placeat repellat error sequi blanditiis, qui eaque? Consectetur delectus iusto ea aliquid provident deleniti magni quam in doloribus sint eligendi recusandae, debitis voluptatem, incidunt consequuntur molestiae dolorem? Nulla voluptatum quam enim tenetur exercitationem velit reprehenderit repellendus neque.</p><br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt magnam dolorum iste voluptas. Nobis ea aut alias, quae atque, facere mollitia fugiat omnis quam magnam repellat ratione repudiandae cupiditate. Deleniti iste consectetur odit maiores, eveniet laboriosam facilis, neque esse quod ex et molestias officiis nulla pariatur iure sint itaque? Quas voluptates, a aliquid quia vitae asperiores magni fugit animi cumque voluptas quis fuga, placeat repellat error sequi blanditiis, qui eaque? Consectetur delectus iusto ea aliquid provident deleniti magni quam in doloribus sint eligendi recusandae, debitis voluptatem, incidunt consequuntur molestiae dolorem? Nulla voluptatum quam enim tenetur exercitationem velit reprehenderit repellendus neque.</p><br> -->
+</div>
+
+
+    <script src="Alqimah.js"></script>
+    
+</body>
+</html>

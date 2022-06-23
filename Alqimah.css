@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    color: #fff;
+font-family: system-ui;
+}
+
+.cruds{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+font-size: larger;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+}
+input:focus{
+    background: #000;
+    transform: scale(1.1)
+}
+.price input{
+    width: 20%;
+}
+#total{
+    background: #f10;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+#total::before{
+    content: 'Total : ';
+}
+button{
+    width: 100%;
+    height: 30px;
+    border:none;
+    cursor: pointer;
+    background: rgba(86, 37, 176, 0.6);
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+button:hover{
+    background: rgba(129, 99, 185, 0.6);
+    letter-spacing: 1px;
+}
+.btnSearch{
+    display: flex;
+justify-content: space-between;
+}
+
+.btnSearch button{
+    width: 45%;
+}
+#deleteAll{
+    margin: 20px 0 ;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 ;
+}
+table button:hover{
+    transform :scale(1.1);
+}
+table th{
+    text-transform: uppercase;
+}
+td,td{
+    padding: 5px;
+}
+
+
+
+
+/* Crdus code  */
+
+/* this to make all in the body to have same margin and padding  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* this to mix colors together  */
+    background: linear-gradient( #200020 , black);
+    /* this to make the background full of the mixed color */
+    height: 100vh; 
+    font-family: system-ui;
+}
+
+a{
+    /* to delete the underline from all a  */
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    position:fixed;
+    width:95%;
+    z-index: 10;
+    display: flex;
+    /* this to make space between the header and ul to be in the left  */
+    justify-content:space-between;
+    /* center the header  */
+    align-items: center;
+    margin: 30px;
+}
+header.logo{
+    font-size: 30px;
+    text-transform:uppercase;
+}
+header ul {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+}
+/* this to make space between li  */
+header ul li {
+    margin-right: 30px;
+}
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+/* this to make hover on each li ,
+ active is a class we use in html for home li  */
+header ul li a:hover, .active{
+    background-color: #fff;
+    color:#200020 ;
+}
+
+/* this parent  */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.main::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top);
+}
+/* child */
+.main img {
+    position:absolute;
+    height: 100vh;
+    width: 100%;
+    /* this to fit the photo size  */
+    object-fit: cover;
+}
+/* Edit moon photo */
+#moon{
+    mix-blend-mode: screen;
+    transform:translateY(80px);
+
+}
+.Alqimah{
+    color: #fff;
+    font-size: 25px;;
+    text-transform: uppercase;
+    /* this to move the element up , and down if we use -140px  */
+    transform:translateY(-140px);
+}
+.content{
+    color: #fff;
+    padding: 30px;
+}
+.content h2{
+    margin: 20px;
+    font-size:30px;
+}
+.content p {
+    margin:20px;
+
+}
